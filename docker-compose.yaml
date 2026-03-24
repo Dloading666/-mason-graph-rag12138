@@ -1,0 +1,124 @@
+name: mason-graph-rag
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: mason-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: mason_graph_rag
+      POSTGRES_USER: mason
+      POSTGRES_PASSWORD: mason_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: mason-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  minio:
+    image: minio/minio:RELEASE.2025-02-18T16-25-55Z
+    container_name: mason-minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+
+  neo4j:
+    image: neo4j:5.26-community
+    container_name: mason-neo4j
+    restart: unless-stopped
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: neo4j/password
+    volumes:
+      - neo4j_data:/data
+
+  backend:
+    build:
+      context: ./backend
+    container_name: mason-backend
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    environment:
+      DATABASE_URL: postgresql+psycopg://mason:mason_password@postgres:5432/mason_graph_rag
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+      MINIO_BUCKET: mason-knowledge
+      MINIO_SECURE: "false"
+      NEO4J_ENABLED: "true"
+      NEO4J_URI: bolt://neo4j:7687
+      CELERY_TASK_ALWAYS_EAGER: "false"
+    depends_on:
+      - postgres
+      - redis
+      - minio
+      - neo4j
+    ports:
+      - "8000:8000"
+
+  celery-worker:
+    build:
+      context: ./backend
+    container_name: mason-celery-worker
+    restart: unless-stopped
+    command: celery -A backend.graphrag_core.tasks.celery_app.celery_app worker --loglevel=INFO
+    env_file:
+      - ./.env
+    environment:
+      DATABASE_URL: postgresql+psycopg://mason:mason_password@postgres:5432/mason_graph_rag
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/1
+      CELERY_RESULT_BACKEND: redis://redis:6379/2
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+      MINIO_BUCKET: mason-knowledge
+      MINIO_SECURE: "false"
+      NEO4J_ENABLED: "true"
+      NEO4J_URI: bolt://neo4j:7687
+      CELERY_TASK_ALWAYS_EAGER: "false"
+    depends_on:
+      - postgres
+      - redis
+      - minio
+      - neo4j
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: http://localhost:8000/api/v1
+    container_name: mason-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:
+  neo4j_data:
+
