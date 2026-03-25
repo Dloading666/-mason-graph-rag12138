@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ab11bb0-eb63-4c58-a7c1-2c7e166ff11d" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codebuddy/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codex/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/.codex/skills/ui-ux-pro-max/scripts/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codex/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/.codex/skills/ui-ux-pro-max/scripts/design_system.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.codex/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/.codex/skills/ui-ux-pro-max/scripts/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.continue/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cursor/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gemini/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/PROMPT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/prompts/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.kiro/steering/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.opencode/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qoder/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.roo/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.trae/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/SKILL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/charts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/colors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/icons.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/landing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/react-performance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/astro.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/flutter.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/nextjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/react-native.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/react.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/shadcn.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/svelte.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/swiftui.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/stacks/vue.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/styles.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/typography.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/ui-reasoning.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/ux-guidelines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/data/web-interface.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/scripts/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/scripts/design_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.windsurf/skills/ui-ux-pro-max/scripts/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/contracts.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/core/contracts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/graphrag_core/db/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/graphrag_core/db/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/graphrag_core/integrations/object_storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/graphrag_core/integrations/object_storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/graphrag_core/pipelines/ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/graphrag_core/pipelines/ingestion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/graphrag_core/search/modes.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/graphrag_core/search/modes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/graphrag_core/tasks/celery_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/graphrag_core/tasks/celery_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pipelines/document_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pipelines/document_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/search/chunker/mason_chunker.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/search/chunker/mason_chunker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server/api/endpoints/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server/api/endpoints/document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/server/services/document_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server/services/document_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/documentApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/documentApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/EvidencePanel/EvidencePanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/EvidencePanel/EvidencePanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/GraphVisual/GraphVisual.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/GraphVisual/GraphVisual.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Layout/AppLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Layout/AppLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/QuestionInput/QuestionInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/QuestionInput/QuestionInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Document/Document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Document/Document.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Graph/Graph.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Graph/Graph.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Jobs/Jobs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Jobs/Jobs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Qa/Qa.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Qa/Qa.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Setting/Setting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Setting/Setting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Traces/Traces.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Traces/Traces.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/types/document.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/types/document.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/format.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/format.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.tsbuildinfo" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Dloading666&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Dloading666/-mason-graph-rag12138&quot;,
+    &quot;accountId&quot;: &quot;19270e6f-944b-41ce-9781-db1aa44c43c0&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3BL3e0wZFuUtZzFCLriWQlgMvAP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/aaa/匠图智答・建材图谱智能问答平台"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-02acdf704d18-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.28539.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="5ab11bb0-eb63-4c58-a7c1-2c7e166ff11d" name="更改" comment="" />
+      <created>1774254615085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774254615085</updated>
+    </task>
+    <servers />
+  </component>
+</project>
