@@ -6,6 +6,7 @@ from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
 from backend.embedding.ali_embedding import AliTextEmbedding
+from backend.graphrag_core.knowledge_base import KnowledgeBaseSettingsStore
 from backend.graphrag_core.community.builder import CommunityBuilder
 from backend.graphrag_core.graph.builder import GraphBuilder
 from backend.graphrag_core.integrations.neo4j_store import Neo4jGraphStore
@@ -24,6 +25,7 @@ class DocumentIngestionPipeline:
         self.community_builder = CommunityBuilder()
         self.neo4j_store = Neo4jGraphStore()
         self.versioning = VersioningService()
+        self.settings_store = KnowledgeBaseSettingsStore()
 
     def ingest_document(self, session: Session, document_id: str) -> dict[str, int | str]:
         """Ingest one document and refresh related graph/index artifacts."""
@@ -51,7 +53,7 @@ class DocumentIngestionPipeline:
         session.execute(delete(ChunkModel).where(ChunkModel.document_pk == document.pk))
         session.flush()
 
-        chunks = self.processor.chunk_preview(document.content)
+        chunks = self.processor.chunk_preview(document.content, self.settings_store.load().chunking)
         chunk_rows: list[ChunkModel] = []
         for index, chunk in enumerate(chunks, start=1):
             vector = self.embedder.safe_embed_text(chunk, text_type="document")

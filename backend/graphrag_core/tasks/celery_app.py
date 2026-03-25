@@ -6,6 +6,8 @@ from typing import Any, Callable
 
 from backend.config.settings import settings
 
+TASK_MODULES = ("backend.graphrag_core.tasks.workflows",)
+
 
 class _ImmediateTask:
     """Fallback task wrapper used when Celery is unavailable."""
@@ -50,5 +52,11 @@ else:
         result_serializer="json",
         enable_utc=False,
         timezone="Asia/Hong_Kong",
+        imports=TASK_MODULES,
     )
-    celery_app.autodiscover_tasks(["backend.graphrag_core.tasks"])
+    celery_app.autodiscover_tasks(["backend.graphrag_core"], related_name="tasks")
+
+
+# Explicitly import task modules so the worker always registers decorated tasks
+# when started via `celery -A ...celery_app worker`.
+from backend.graphrag_core.tasks import workflows as _workflows  # noqa: F401,E402

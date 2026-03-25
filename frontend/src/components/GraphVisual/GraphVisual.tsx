@@ -7,7 +7,7 @@ interface GraphVisualProps {
 }
 
 export default function GraphVisual({ graph }: GraphVisualProps) {
-  const palette = ['#64748B', '#F97316', '#0F766E', '#C98A1B', '#475569', '#1D4ED8'];
+  const palette = ['#60a5fa', '#38bdf8', '#2563eb', '#1d4ed8', '#0ea5e9', '#93c5fd'];
   const categories = Array.from(new Set(graph.nodes.map((node) => node.category)));
   const degrees = graph.edges.reduce<Record<string, number>>((accumulator, edge) => {
     accumulator[edge.source] = (accumulator[edge.source] ?? 0) + 1;
@@ -21,18 +21,20 @@ export default function GraphVisual({ graph }: GraphVisualProps) {
 
   const option = {
     backgroundColor: 'transparent',
-    animationDuration: 700,
-    animationDurationUpdate: 400,
+    animationDuration: 760,
+    animationDurationUpdate: 420,
     tooltip: {
-      backgroundColor: 'rgba(17, 24, 39, 0.94)',
+      backgroundColor: 'rgba(8, 22, 30, 0.96)',
       borderWidth: 0,
+      padding: 12,
       textStyle: {
-        color: '#E2E8F0',
+        color: '#dce8ff',
       },
       formatter: (params: { dataType: string; data: any }) => {
         if (params.dataType === 'edge') {
           return `${params.data.source} → ${params.data.target}<br/>关系：${params.data.relation}`;
         }
+
         return `${params.data.name}<br/>分类：${params.data.category}<br/>连接数：${params.data.degree}<br/>来源文档：${params.data.documentCount}`;
       },
     },
@@ -46,26 +48,25 @@ export default function GraphVisual({ graph }: GraphVisualProps) {
         label: {
           show: true,
           position: 'right',
-          color: '#E2E8F0',
+          color: '#e1ebff',
           fontSize: 11,
         },
         force: {
-          repulsion: 300,
-          edgeLength: [90, 170],
+          repulsion: 340,
+          edgeLength: [92, 180],
           gravity: 0.08,
         },
         lineStyle: {
-          color: 'rgba(148, 163, 184, 0.36)',
+          color: 'rgba(157, 184, 230, 0.34)',
           width: 1.4,
-          curveness: 0.18,
+          curveness: 0.16,
         },
         edgeSymbol: ['none', 'arrow'],
         edgeSymbolSize: [0, 6],
         emphasis: {
           focus: 'adjacency',
-          label: { show: true },
           lineStyle: {
-            width: 2.2,
+            width: 2.3,
           },
         },
         categories: categories.map((item) => ({ name: item })),
@@ -79,10 +80,10 @@ export default function GraphVisual({ graph }: GraphVisualProps) {
           symbolSize: Math.min(42, 18 + (degrees[node.id] ?? 0) * 2 + node.source_documents.length),
           itemStyle: {
             color: categoryColorMap[node.category],
-            borderColor: 'rgba(248, 250, 252, 0.92)',
+            borderColor: 'rgba(229, 238, 255, 0.9)',
             borderWidth: 1.6,
-            shadowBlur: 16,
-            shadowColor: 'rgba(15, 23, 42, 0.32)',
+            shadowBlur: 18,
+            shadowColor: 'rgba(8, 18, 35, 0.3)',
           },
         })),
         links: graph.edges.map((edge) => ({
@@ -91,7 +92,7 @@ export default function GraphVisual({ graph }: GraphVisualProps) {
           relation: edge.relation,
           label: {
             show: true,
-            color: 'rgba(226, 232, 240, 0.72)',
+            color: 'rgba(214, 227, 255, 0.72)',
             formatter: edge.relation,
           },
         })),
@@ -101,7 +102,7 @@ export default function GraphVisual({ graph }: GraphVisualProps) {
 
   return (
     <div className="graph-canvas">
-      <ReactECharts option={option} style={{ height: 560 }} notMerge lazyUpdate />
+      <ReactECharts option={option} style={{ height: 620 }} notMerge lazyUpdate />
     </div>
   );
 }

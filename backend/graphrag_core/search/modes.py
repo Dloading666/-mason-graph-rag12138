@@ -43,19 +43,38 @@ class MultiModeSearchService:
         user_role: str,
         requested_mode: str = "auto",
         limit: int = 6,
+        semantic_weight: float = 0.45,
+        keyword_weight: float = 0.55,
+        score_threshold: float | None = None,
     ) -> RetrievalResult:
         """Route the query to a retrieval strategy and return ranked evidence."""
 
         mode = self._resolve_mode(question, requested_mode)
         if mode == "naive":
-            evidence, debug = self._naive_search(session, question, user_role, limit)
+            evidence, debug = self._naive_search(
+                session,
+                question,
+                user_role,
+                limit,
+                semantic_weight=semantic_weight,
+                keyword_weight=keyword_weight,
+            )
         elif mode == "local":
             evidence, debug = self._local_graph_search(session, question, user_role, limit)
         elif mode == "global":
             evidence, debug = self._global_search(session, question, user_role, limit)
         else:
-            evidence, debug = self._hybrid_search(session, question, user_role, limit)
+            evidence, debug = self._hybrid_search(
+                session,
+                question,
+                user_role,
+                limit,
+                semantic_weight=semantic_weight,
+                keyword_weight=keyword_weight,
+            )
             mode = "hybrid" if mode == "auto" else mode
+        if score_threshold is not None:
+            evidence = [item for item in evidence if item.score >= score_threshold]
         return RetrievalResult(mode=mode, evidence=evidence, debug=debug)
 
     def _resolve_mode(self, question: str, requested_mode: str) -> str:
@@ -72,7 +91,14 @@ class MultiModeSearchService:
         return [document for document in documents if user_role in (document.allowed_roles or [])]
 
     def _naive_search(
-        self, session: Session, question: str, user_role: str, limit: int
+        self,
+        session: Session,
+        question: str,
+        user_role: str,
+        limit: int,
+        *,
+        semantic_weight: float,
+        keyword_weight: float,
     ) -> tuple[list[EvidenceItem], dict[str, object]]:
         visible_docs = self._visible_documents(session, user_role)
         visible_doc_ids = {document.pk for document in visible_docs}
@@ -87,6 +113,10 @@ class MultiModeSearchService:
             if chunk.document_pk in visible_doc_ids
         ]
 
+        if semantic_weight + keyword_weight <= 0:
+            semantic_weight = 0.45
+            keyword_weight = 0.55
+
         ranked: list[tuple[float, ChunkModel, DocumentModel]] = []
         doc_by_pk = {document.pk: document for document in visible_docs}
         for chunk in chunk_rows:
@@ -94,7 +124,7 @@ class MultiModeSearchService:
             if question[:8] and question[:8] in chunk.content:
                 keyword_score += 2
             semantic_score = self._cosine_similarity(query_embedding, chunk.embedding)
-            score = keyword_score * 0.55 + semantic_score * 0.45
+            score = keyword_score * keyword_weight + semantic_score * semantic_weight
             if score <= 0:
                 continue
             ranked.append((score, chunk, doc_by_pk[chunk.document_pk]))
@@ -268,9 +298,23 @@ class MultiModeSearchService:
         return [item[1] for item in ranked[:limit]], {"communities": len(communities), "source": "sql"}
 
     def _hybrid_search(
-        self, session: Session, question: str, user_role: str, limit: int
+        self,
+        session: Session,
+        question: str,
+        user_role: str,
+        limit: int,
+        *,
+        semantic_weight: float,
+        keyword_weight: float,
     ) -> tuple[list[EvidenceItem], dict[str, object]]:
-        naive, naive_debug = self._naive_search(session, question, user_role, limit)
+        naive, naive_debug = self._naive_search(
+            session,
+            question,
+            user_role,
+            limit,
+            semantic_weight=semantic_weight,
+            keyword_weight=keyword_weight,
+        )
         local, local_debug = self._local_graph_search(session, question, user_role, limit)
         global_items, global_debug = self._global_search(session, question, user_role, limit)
 

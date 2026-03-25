@@ -11,6 +11,7 @@ from pathlib import Path
 
 from fastapi import UploadFile
 
+from backend.core.contracts import ChunkingConfig
 from backend.search.chunker.mason_chunker import MasonChunker
 
 
@@ -51,8 +52,10 @@ class DocumentProcessor:
             return self._extract_doc(raw)
         return raw.decode("utf-8", errors="ignore").strip()
 
-    def chunk_preview(self, text: str) -> list[str]:
-        return self.chunker.chunk(text)
+    def chunk_preview(self, text: str, config: ChunkingConfig | None = None) -> list[str]:
+        if config is None:
+            return self.chunker.chunk(text)
+        return MasonChunker(config).chunk(text)
 
     def _extract_pdf(self, raw: bytes) -> str:
         try:

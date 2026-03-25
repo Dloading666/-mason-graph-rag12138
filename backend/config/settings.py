@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     """Runtime settings for API, storage, queues, and model integrations."""
 
     model_config = SettingsConfigDict(
-        env_file=ROOT_DIR / ".env",
+        env_file=ROOT_DIR / "..env",
         env_file_encoding="utf-8",
         extra="ignore",
     )
@@ -80,6 +80,7 @@ class Settings(BaseSettings):
 
     DOCUMENT_STORAGE_DIR: str = "backend/data/uploads"
     DOCUMENT_INDEX_FILE: str = "backend/data/state/documents.json"
+    KNOWLEDGE_BASE_SETTINGS_FILE: str = "backend/data/state/knowledge_base_settings.json"
 
     ENABLE_ADVANCED_GRAPHRAG: bool = True
     ENABLE_DEBUG_TRACES: bool = True
@@ -100,6 +101,10 @@ class Settings(BaseSettings):
     @property
     def document_index_file(self) -> Path:
         return ROOT_DIR / self.DOCUMENT_INDEX_FILE
+
+    @property
+    def knowledge_base_settings_file(self) -> Path:
+        return ROOT_DIR / self.KNOWLEDGE_BASE_SETTINGS_FILE
 
     @property
     def resolved_qwen_api_key(self) -> str | None:

@@ -1,18 +1,28 @@
 name: mason-graph-rag
 
 services:
-  postgres:
-    image: postgres:16-alpine
-    container_name: mason-postgres
+  mysql:
+    image: mysql:8.4
+    container_name: mason-mysql
     restart: unless-stopped
     environment:
-      POSTGRES_DB: mason_graph_rag
-      POSTGRES_USER: mason
-      POSTGRES_PASSWORD: mason_password
+      MYSQL_DATABASE: mason_graph_rag
+      MYSQL_USER: mason
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 123456
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
     ports:
-      - "5432:5432"
+      - "3306:3306"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
 
   redis:
     image: redis:7-alpine
@@ -57,7 +67,7 @@ services:
     env_file:
       - ./.env
     environment:
-      DATABASE_URL: postgresql+psycopg://mason:mason_password@postgres:5432/mason_graph_rag
+      DATABASE_URL: mysql+pymysql://mason:123456@mysql:3306/mason_graph_rag?charset=utf8mb4
       REDIS_URL: redis://redis:6379/0
       CELERY_BROKER_URL: redis://redis:6379/1
       CELERY_RESULT_BACKEND: redis://redis:6379/2
@@ -66,14 +76,19 @@ services:
       MINIO_SECRET_KEY: minioadmin
       MINIO_BUCKET: mason-knowledge
       MINIO_SECURE: "false"
+      MINIO_ENABLED: "true"
       NEO4J_ENABLED: "true"
       NEO4J_URI: bolt://neo4j:7687
       CELERY_TASK_ALWAYS_EAGER: "false"
     depends_on:
-      - postgres
-      - redis
-      - minio
-      - neo4j
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      minio:
+        condition: service_started
+      neo4j:
+        condition: service_started
     ports:
       - "8000:8000"
 
@@ -86,7 +101,7 @@ services:
     env_file:
       - ./.env
     environment:
-      DATABASE_URL: postgresql+psycopg://mason:mason_password@postgres:5432/mason_graph_rag
+      DATABASE_URL: mysql+pymysql://mason:123456@mysql:3306/mason_graph_rag?charset=utf8mb4
       REDIS_URL: redis://redis:6379/0
       CELERY_BROKER_URL: redis://redis:6379/1
       CELERY_RESULT_BACKEND: redis://redis:6379/2
@@ -95,14 +110,19 @@ services:
       MINIO_SECRET_KEY: minioadmin
       MINIO_BUCKET: mason-knowledge
       MINIO_SECURE: "false"
+      MINIO_ENABLED: "true"
       NEO4J_ENABLED: "true"
       NEO4J_URI: bolt://neo4j:7687
       CELERY_TASK_ALWAYS_EAGER: "false"
     depends_on:
-      - postgres
-      - redis
-      - minio
-      - neo4j
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      minio:
+        condition: service_started
+      neo4j:
+        condition: service_started
 
   frontend:
     build:
@@ -117,8 +137,7 @@ services:
       - backend
 
 volumes:
-  postgres_data:
+  mysql_data:
   redis_data:
   minio_data:
   neo4j_data:
-

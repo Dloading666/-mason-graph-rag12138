@@ -90,3 +90,21 @@ class ObjectStorageService:
                 target_path.unlink()
         except self._storage_errors as exc:
             logger.warning("Failed to delete object {}: {}", object_key, exc)
+
+    def get_size(self, object_key: str | None) -> int:
+        """Return the persisted object size in bytes when available."""
+
+        if not object_key:
+            return 0
+
+        try:
+            if self.enabled:
+                payload = self._client.head_object(Bucket=settings.MINIO_BUCKET, Key=object_key)
+                return int(payload.get("ContentLength") or 0)
+            target_path = self.local_root / object_key
+            if not target_path.exists():
+                return 0
+            return int(target_path.stat().st_size)
+        except self._storage_errors as exc:
+            logger.warning("Failed to stat object {}: {}", object_key, exc)
+            return 0

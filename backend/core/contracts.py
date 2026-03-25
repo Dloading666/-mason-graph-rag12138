@@ -62,6 +62,11 @@ class DocumentRecord(MasonBaseModel):
     graph_version: int = 0
     index_version: int = 0
     processing_errors: list[str] = []
+    file_size: int = 0
+    char_count: int = 0
+    chunk_count: int = 0
+    progress: float = 0.0
+    created_at: datetime
     updated_at: datetime
 
 
@@ -77,6 +82,11 @@ class DocumentSummary(MasonBaseModel):
     graph_version: int = 0
     index_version: int = 0
     processing_errors: list[str] = []
+    file_size: int = 0
+    char_count: int = 0
+    chunk_count: int = 0
+    progress: float = 0.0
+    created_at: datetime
     updated_at: datetime
 
 
@@ -85,6 +95,73 @@ class IngestResponse(MasonBaseModel):
     status: str
     indexed_chunks: int
     job_id: str | None = None
+
+
+class ChunkingConfig(MasonBaseModel):
+    mode: Literal["general"] = "general"
+    separator: str = "\\n\\n"
+    max_length: int = Field(default=1024, ge=200, le=4000)
+    overlap: int = Field(default=50, ge=0, le=1000)
+    normalize_whitespace: bool = False
+    strip_urls_emails: bool = False
+
+
+class RetrievalConfig(MasonBaseModel):
+    mode: QaMode = "hybrid"
+    semantic_weight: float = Field(default=0.7, ge=0.0, le=1.0)
+    keyword_weight: float = Field(default=0.3, ge=0.0, le=1.0)
+    top_k: int = Field(default=5, ge=1, le=20)
+    score_threshold_enabled: bool = False
+    score_threshold: float = Field(default=0.5, ge=0.0, le=5.0)
+
+
+class KnowledgeBaseSettings(MasonBaseModel):
+    chunking: ChunkingConfig = Field(default_factory=ChunkingConfig)
+    retrieval: RetrievalConfig = Field(default_factory=RetrievalConfig)
+
+
+class ChunkPreviewRequest(MasonBaseModel):
+    chunking: ChunkingConfig | None = None
+    limit: int = Field(default=8, ge=1, le=20)
+
+
+class ChunkPreviewItem(MasonBaseModel):
+    index: int
+    content: str
+    character_count: int
+
+
+class ChunkPreviewResponse(MasonBaseModel):
+    document_id: str
+    title: str
+    total_chunks: int
+    total_characters: int
+    chunks: list[ChunkPreviewItem]
+
+
+class RetrievalTestRequest(MasonBaseModel):
+    question: str
+    retrieval: RetrievalConfig | None = None
+
+
+class RetrievalTestHit(MasonBaseModel):
+    rank: int
+    title: str
+    source: str
+    citation: str
+    chunk_label: str
+    snippet: str
+    character_count: int
+    score: float
+
+
+class RetrievalTestResponse(MasonBaseModel):
+    question: str
+    mode: str
+    duration_ms: int
+    total_hits: int
+    hits: list[RetrievalTestHit]
+    debug: dict[str, Any] | None = None
 
 
 class GraphNode(MasonBaseModel):

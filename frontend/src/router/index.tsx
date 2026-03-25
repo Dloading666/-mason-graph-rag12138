@@ -17,7 +17,7 @@ const TracesPage = lazyWithRetry(() => import('@/pages/Traces/Traces'));
 
 function RouteLoading() {
   return (
-    <div style={{ minHeight: '50vh', display: 'grid', placeItems: 'center' }}>
+    <div className="route-loading">
       <Spin size="large" tip="页面加载中..." />
     </div>
   );
